@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="UserDetails" table="user_details">
+        <id name="userId" column="userId">
+            
+        </id>
+        <property name="firstName" type="string" column="firstName"/>
+        <property name="lastName" type="string" column="lastName"/>
+       	<property name="contactNumber" type="string" column="contactNumber"/>
+       	<property name="emailId" type="string" column="emailId"/>
+       	<property name="address" type="string" column="address"/>
+       	<property name="birthDate" type="string" column="birthDate"/>
+       	<property name="gender" type="string" column="gender"/>
+       	
+    </class>
+
+</hibernate-mapping>

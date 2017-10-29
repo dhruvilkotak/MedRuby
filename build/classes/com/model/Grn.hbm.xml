@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="Grn" table="grn">
+        <id name="grnNumber" column="grnNumber">
+            
+        </id>
+        <property name="grnDate" type="string" column="grnDate"/>
+       	<property name="invoiceNumber" type="string" column="invoiceNumber"/>
+       	<property name="entryNumber" type="string" column="entryNumber"/>
+       	<property name="grnFor" type="string" column="grnFor"/>
+       	
+    </class>
+
+</hibernate-mapping>

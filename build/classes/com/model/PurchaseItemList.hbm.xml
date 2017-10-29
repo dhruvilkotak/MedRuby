@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="PurchaseItemList" table="purchase_item_list">
+        <id name="id" column="id">
+            <generator class="assigned"></generator>
+        </id>
+        <property name="mrvNumber" type="string" column="mrvNumber"/>
+       	<property name="itemId" type="string" column="itemId"/>
+       	<property name="requiredQty" type="string" column="requiredQty"/>
+       	<property name="requiredByDate" type="string" column="requiredByDate"/>
+       	<property name="amount" type="string" column="amount"/>
+    </class>
+
+</hibernate-mapping>

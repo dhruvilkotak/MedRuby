@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="SalesEnquiry" table="sales_enquiry">
+        <id name="enquiryNumber" column="enquiryNumber">
+            
+        </id>
+        <property name="enquiryDate" type="string" column="enquiryDate"/>
+        <property name="enquiryStatus" type="string" column="enquiryStatus"/>
+       	<property name="enquiryType" type="string" column="enquiryType"/>
+       	<property name="sector" type="string" column="sector"/>
+       	<property name="enquiryGeneratedBy" type="string" column="enquiryGeneratedBy"/>
+       	<property name="userId" type="string" column="userId"/>
+       	<property name="enquiryDueDate" type="string" column="enquiryDueDate"/>
+       	<property name="description" type="string" column="description"/>
+       	<property name="preparedBy" type="string" column="preparedBy"/>
+       	<property name="remarks" type="string" column="remarks"/>
+       	<property name="leadNumber" type="string" column="leadNumber"/>
+      	<property name="itemId" type="string" column="itemId"/>
+       	<property name="customerId" type="string" column="customerId"/>
+       	<property name="requiredQty" type="string" column="requiredQty"/>
+        <property name="source" type="string" column="source"/>
+         <property name="quoGenerated" type="string" column="quoGenerated"/>
+    </class>
+
+</hibernate-mapping>

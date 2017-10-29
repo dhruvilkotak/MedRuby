@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="PurchaseEnquiry" table="purchase_enquiry">
+        <id name="enquiryNumber" column="enquiryNumber">
+           
+        </id>
+        <property name="enquiryDate" type="string" column="enquiryDate"/>
+        <property name="priority" type="string" column="priority"/>
+        <property name="mrvNumber" type="string" column="mrvNumber"/>
+       	<property name="followupBy" type="string" column="followupBy"/>
+    </class>
+
+</hibernate-mapping>

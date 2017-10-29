@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="VehicleInOutEntry" table="vehicle_in_out_entry">
+        <id name="entryNumber" column="entryNumber">
+            
+        </id>
+        <property name="entryDate" type="string" column="entryDate"/>
+        <property name="gatePassNumber" type="string" column="gatePassNumber"/>
+        <property name="gatePassDate" type="string" column="gatePassDate"/>
+        <property name="vehicleNumber" type="string" column="vehicleNumber"/>
+        <property name="transportName" type="string" column="transportName"/>
+       	<property name="toDepartment" type="string" column="toDepartment"/>
+       	<property name="refDocumentNumber" type="string" column="refDocumentNumber"/>
+       	<property name="vehicleStatus" type="string" column="vehicleStatus"/>
+       	<property name="enteredBy" type="string" column="enteredBy"/>
+       	<property name="remarks" type="string" column="remarks"/>
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="SalesReturn" table="sales_return">
+        <id name="returnNumber" column="returnNumber">
+            
+        </id>
+        <property name="returnDate" type="string" column="returnDate"/>
+        <property name="salesOrderId" type="string" column="salesOrderId"/>
+        <property name="itemId" type="string" column="itemId"/>
+        <property name="returnQty" type="string" column="returnQty"/>
+        <property name="totalAmount" type="string" column="totalAmount"/>
+        <property name="preparedBy" type="string" column="preparedBy"/>
+        <property name="remarks" type="string" column="remarks"/>
+        
+        
+       	
+    </class>
+
+</hibernate-mapping>

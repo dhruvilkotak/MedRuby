@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="Item" table="item">
+        <id name="itemId" column="itemId">
+            
+        </id>
+        <property name="itemName" type="string" column="itemName"/>
+        <property name="itemType" type="string" column="itemType"/>
+        <property name="itemRefNumber" type="string" column="itemRefNumber"/>
+        <property name="brand" type="string" column="brand"/>
+        <property name="openingStock" type="string" column="openingStock"/>
+        <property name="currentStock" type="string" column="currentStock"/>
+        <property name="rejectedStock" type="string" column="rejectedStock"/>
+        <property name="reserveStock" type="string" column="reserveStock"/>
+        <property name="minimumOrderQty" type="string" column="minimumOrderQty"/>
+        <property name="rate" type="string" column="rate"/>
+        <property name="uom" type="string" column="uom"/>
+        <property name="itemRemarks" type="string" column="itemRemarks"/>
+        <property name="inventoryCategory" type="string" column="inventoryCategory"/>
+        
+       	
+    </class>
+
+</hibernate-mapping>

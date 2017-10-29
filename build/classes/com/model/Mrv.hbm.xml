@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="Mrv" table="mrv">
+        <id name="mrvNumber" column="mrvNumber">
+           
+        </id>
+        <property name="mrvDate" type="string" column="mrvDate"/>
+        <property name="priority" type="string" column="priority"/>
+        <property name="fromDept" type="string" column="fromDept"/>
+       	<property name="toDept" type="string" column="toDept"/>
+       	<property name="preparedBy" type="string" column="preparedBy"/>
+       	<property name="remarks" type="string" column="remarks"/>
+       	<property name="viewed" type="string" column="viewed"/>
+    </class>
+
+</hibernate-mapping>

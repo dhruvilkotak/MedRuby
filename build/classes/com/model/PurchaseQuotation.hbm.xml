@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="PurchaseQuotation" table="purchase_quotation">
+        <id name="quotationNumber" column="quotationNumber">
+            
+        </id>
+        <property name="quotationDate" type="string" column="quotationDate"/>
+        <property name="quotationStatus" type="string" column="quotationStatus"/>
+        <property name="supplierId" type="string" column="supplierId"/>
+        <property name="enquiryNumber" type="string" column="enquiryNumber"/>
+        <property name="currencyType" type="string" column="currencyType"/>
+        <property name="currencyRate" type="string" column="currencyRate"/>
+        <property name="netAmount" type="string" column="netAmount"/>
+        <property name="grossAmount" type="string" column="grossAmount"/>
+        <property name="associates" type="string" column="associates"/>
+        <property name="preparedBy" type="string" column="preparedBy"/>
+        <property name="remarks" type="string" column="remarks"/>
+        <property name="id" type="int" column="id"/>
+        <property name="oredered" type="string" column="oredered"/>
+    </class>
+
+</hibernate-mapping>

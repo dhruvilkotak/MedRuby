@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.model">
+
+    <class name="PurchaseOrder" table="purchase_order">
+        <id name="poNumber" column="poNumber">
+           
+        </id>
+        <property name="orderDate" type="string" column="orderDate"/>
+        <property name="orderStatus" type="string" column="orderStatus"/>
+       	<property name="quotationNumber" type="string" column="quotationNumber"/>
+       	<property name="deliveryDate" type="string" column="deliveryDate"/>
+       	
+    </class>
+
+</hibernate-mapping>
